@@ -37,12 +37,9 @@ function groupBy(collection, it) {
       if(objeto_final[it((collection[i]))]){
         objeto_final[it((collection[i]))].push(collection[i]);
       }else{
-        console.log("Soy else")
         objeto_final[it(collection[i])] = [collection[i]];
       }
     }else{
-      console.log("propiedad");
-      console.log(collection[i][it]);
       if(objeto_final[collection[i][it]]){
         objeto_final[collection[i][it]].push(collection[i]);
       }else{
